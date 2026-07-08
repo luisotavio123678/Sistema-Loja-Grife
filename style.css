@@ -1,0 +1,274 @@
+/* ===========================================================
+   MAISON ÉLÉGANCE
+   Luxury Fashion Management System
+   =========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0b0b0b;
+
+    color:#f5f5f5;
+
+    line-height:1.6;
+
+}
+
+/* ========================= */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 8%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    background:rgba(8,8,8,.92);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(212,175,55,.15);
+
+}
+
+.logo h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:2rem;
+
+    letter-spacing:2px;
+
+}
+
+.logo span{
+
+    color:#d4af37;
+
+}
+
+.logo p{
+
+    color:#bdbdbd;
+
+    font-size:.8rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+nav a{
+
+    color:#eee;
+
+    font-weight:500;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d4af37;
+
+    transition:.35s;
+
+}
+
+nav a:hover{
+
+    color:#d4af37;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:140px 8% 80px;
+
+}
+
+.hero h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:3.6rem;
+
+    line-height:1.2;
+
+    margin-bottom:30px;
+
+}
+
+.hero p{
+
+    font-size:1.05rem;
+
+    color:#cfcfcf;
+
+    margin-bottom:35px;
+
+}
+
+.hero-image img{
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.55);
+
+}
+
+/* ========================= */
+/* BOTÕES */
+/* ========================= */
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-gold{
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:15px 34px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-gold:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(212,175,55,.35);
+
+}
+
+.btn-dark{
+
+    border:2px solid #d4af37;
+
+    color:#d4af37;
+
+    padding:15px 34px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+}
+
+.btn-dark:hover{
+
+    background:#d4af37;
+
+    color:#111;
+
+}

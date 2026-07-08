@@ -1,0 +1,403 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos | Maison Élégance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <h1>Maison <span>Élégance</span></h1>
+
+        <p>Luxury Fashion Management</p>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Coleções</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="financeiro.html">Financeiro</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h2>Central de Pedidos</h2>
+
+        <p>
+
+            Gerencie pedidos em tempo real, acompanhe entregas e ofereça uma
+            experiência premium para cada cliente da Maison Élégance.
+
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+            alt="Gestão de Pedidos">
+
+    </div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section class="statistics">
+
+    <div class="stat">
+
+        <h2>1.248</h2>
+
+        <p>Pedidos Concluídos</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>R$ 4,8 Mi</h2>
+
+        <p>Faturamento</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>97%</h2>
+
+        <p>Entregas no Prazo</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>48</h2>
+
+        <p>Pedidos Hoje</p>
+
+    </div>
+
+</section>
+
+<!-- PEDIDOS RECENTES -->
+
+<section class="highlights">
+
+    <h2>Pedidos Recentes</h2>
+
+    <p>
+
+        Últimas compras realizadas na boutique.
+
+    </p>
+
+    <div class="cards">
+
+        <!-- Pedido 001 -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+                alt="Vestido">
+
+            <h3>Pedido #1001</h3>
+
+            <p><strong>Cliente:</strong> Isabella Moretti</p>
+
+            <p><strong>Produto:</strong> Vestido Elegance Paris</p>
+
+            <p><strong>Pagamento:</strong> Cartão Black</p>
+
+            <p><strong>Status:</strong>
+                <span style="color:lime;">Entregue</span>
+            </p>
+
+            <h2 style="color:#D4AF37;">R$ 8.990,00</h2>
+
+        </div>
+
+        <!-- Pedido 002 -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=80"
+                alt="Relógio">
+
+            <h3>Pedido #1002</h3>
+
+            <p><strong>Cliente:</strong> Henrique Valente</p>
+
+            <p><strong>Produto:</strong> Relógio Prestige Swiss</p>
+
+            <p><strong>Pagamento:</strong> PIX</p>
+
+            <p><strong>Status:</strong>
+                <span style="color:orange;">Em Transporte</span>
+            </p>
+
+            <h2 style="color:#D4AF37;">R$ 18.500,00</h2>
+
+        </div>
+
+        <!-- Pedido 003 -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                alt="Bolsa">
+
+            <h3>Pedido #1003</h3>
+
+            <p><strong>Cliente:</strong> Sofia Albuquerque</p>
+
+            <p><strong>Produto:</strong> Bolsa Signature Gold</p>
+
+            <p><strong>Pagamento:</strong> Cartão Platinum</p>
+
+            <p><strong>Status:</strong>
+                <span style="color:#00BFFF;">Preparando Envio</span>
+            </p>
+
+            <h2 style="color:#D4AF37;">R$ 12.900,00</h2>
+
+        </div>
+
+    </div>
+
+</section>
+```
+```html
+<!-- ================= TABELA DE PEDIDOS ================= -->
+
+<section class="highlights">
+
+    <h2>Histórico de Pedidos</h2>
+
+    <p>
+        Acompanhe todos os pedidos realizados pelos clientes da Maison Élégance.
+    </p>
+
+    <div style="overflow-x:auto;">
+
+        <table style="width:100%; border-collapse:collapse; background:#161616; border-radius:12px; overflow:hidden; margin-top:30px;">
+
+            <thead style="background:#D4AF37; color:#111;">
+
+                <tr>
+
+                    <th style="padding:18px;">Pedido</th>
+                    <th>Cliente</th>
+                    <th>Data</th>
+                    <th>Pagamento</th>
+                    <th>Rastreamento</th>
+                    <th>Status</th>
+                    <th>Total</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td style="padding:16px;">#1001</td>
+                    <td>Isabella Moretti</td>
+                    <td>07/07/2026</td>
+                    <td>Cartão Black</td>
+                    <td>BR845963215</td>
+                    <td style="color:lime;">Entregue</td>
+                    <td>R$ 8.990,00</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">#1002</td>
+                    <td>Henrique Valente</td>
+                    <td>07/07/2026</td>
+                    <td>PIX</td>
+                    <td>BR845963216</td>
+                    <td style="color:orange;">Em Transporte</td>
+                    <td>R$ 18.500,00</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">#1003</td>
+                    <td>Sofia Albuquerque</td>
+                    <td>06/07/2026</td>
+                    <td>Cartão Platinum</td>
+                    <td>BR845963217</td>
+                    <td style="color:#00BFFF;">Preparando</td>
+                    <td>R$ 12.900,00</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">#1004</td>
+                    <td>Eduardo Martins</td>
+                    <td>06/07/2026</td>
+                    <td>Boleto</td>
+                    <td>BR845963218</td>
+                    <td style="color:red;">Pendente</td>
+                    <td>R$ 6.990,00</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">#1005</td>
+                    <td>Carolina Ferraz</td>
+                    <td>05/07/2026</td>
+                    <td>PIX</td>
+                    <td>BR845963219</td>
+                    <td style="color:lime;">Entregue</td>
+                    <td>R$ 3.890,00</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">#1006</td>
+                    <td>Ricardo Almeida</td>
+                    <td>05/07/2026</td>
+                    <td>Cartão Gold</td>
+                    <td>BR845963220</td>
+                    <td style="color:lime;">Entregue</td>
+                    <td>R$ 2.790,00</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= ETAPAS DO PEDIDO ================= -->
+
+<section class="advantages">
+
+    <h2>Acompanhamento do Pedido</h2>
+
+    <div class="advantages-grid">
+
+        <div class="advantage">
+
+            <i class="fas fa-credit-card"></i>
+
+            <h3>Pagamento Confirmado</h3>
+
+            <p>
+                Confirmação automática e emissão da nota fiscal.
+            </p>
+
+        </div>
+
+        <div class="advantage">
+
+            <i class="fas fa-box-open"></i>
+
+            <h3>Separação</h3>
+
+            <p>
+                Os produtos passam por conferência e embalagem premium.
+            </p>
+
+        </div>
+
+        <div class="advantage">
+
+            <i class="fas fa-truck"></i>
+
+            <h3>Entrega</h3>
+
+            <p>
+                Rastreamento em tempo real até a entrega ao cliente.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Excelência em Cada Entrega</h2>
+
+    <p>
+
+        Cada pedido recebe atenção especial, garantindo segurança,
+        rapidez e uma experiência de compra compatível com uma marca de luxo.
+
+    </p>
+
+    <a href="relatorios.html" class="btn-gold">
+
+        Ver Relatórios
+
+    </a>
+
+</section>
+
+<!-- ================= RODAPÉ ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <h2>Maison <span>Élégance</span></h2>
+
+        <p>Luxury Fashion Management System</p>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Maison Élégance — Todos os Direitos Reservados.
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
+```

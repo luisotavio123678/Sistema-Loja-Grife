@@ -1,0 +1,439 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estoque | Maison Élégance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <h1>Maison <span>Élégance</span></h1>
+
+        <p>Luxury Fashion Management</p>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Coleções</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="financeiro.html">Financeiro</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h2>Controle Inteligente de Estoque</h2>
+
+        <p>
+
+            Monitore a disponibilidade dos produtos, acompanhe entradas e saídas
+            e mantenha sua boutique sempre abastecida com eficiência.
+
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
+            alt="Centro de Distribuição">
+
+    </div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section class="statistics">
+
+    <div class="stat">
+
+        <h2>3.280</h2>
+
+        <p>Produtos em Estoque</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>215</h2>
+
+        <p>Reposições este Mês</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>18</h2>
+
+        <p>Estoque Baixo</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>99,2%</h2>
+
+        <p>Precisão do Inventário</p>
+
+    </div>
+
+</section>
+
+<!-- PRODUTOS -->
+
+<section class="highlights">
+
+    <h2>Estoque Atual</h2>
+
+    <p>
+
+        Produtos monitorados em tempo real.
+
+    </p>
+
+    <div class="cards">
+
+        <!-- Produto -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+                alt="Vestido">
+
+            <h3>Vestido Elegance Paris</h3>
+
+            <p><strong>SKU:</strong> MEP-1001</p>
+
+            <p><strong>Categoria:</strong> Haute Couture</p>
+
+            <p><strong>Quantidade:</strong> 12</p>
+
+            <p style="color:lime;"><strong>Status:</strong> Disponível</p>
+
+        </div>
+
+        <!-- Produto -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=80"
+                alt="Relógio">
+
+            <h3>Relógio Prestige Swiss</h3>
+
+            <p><strong>SKU:</strong> MEP-1020</p>
+
+            <p><strong>Categoria:</strong> Relógios</p>
+
+            <p><strong>Quantidade:</strong> 5</p>
+
+            <p style="color:orange;"><strong>Status:</strong> Estoque Baixo</p>
+
+        </div>
+
+        <!-- Produto -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                alt="Bolsa">
+
+            <h3>Bolsa Signature Gold</h3>
+
+            <p><strong>SKU:</strong> MEP-1032</p>
+
+            <p><strong>Categoria:</strong> Bolsas</p>
+
+            <p><strong>Quantidade:</strong> 18</p>
+
+            <p style="color:lime;"><strong>Status:</strong> Disponível</p>
+
+        </div>
+
+    </div>
+
+</section>
+```
+```html
+<!-- ================= TABELA DE INVENTÁRIO ================= -->
+
+<section class="highlights">
+
+    <h2>Inventário Geral</h2>
+
+    <p>
+        Acompanhe o estoque disponível, os níveis mínimos e a movimentação dos produtos.
+    </p>
+
+    <div style="overflow-x:auto;">
+
+        <table style="width:100%; border-collapse:collapse; background:#161616; border-radius:12px; overflow:hidden; margin-top:30px;">
+
+            <thead style="background:#D4AF37; color:#111;">
+
+                <tr>
+
+                    <th style="padding:18px;">SKU</th>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Estoque</th>
+                    <th>Estoque Mínimo</th>
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td style="padding:16px;">MEP-1001</td>
+                    <td>Vestido Elegance Paris</td>
+                    <td>Haute Couture</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td style="color:lime;">Disponível</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">MEP-1002</td>
+                    <td>Blazer Milano Black</td>
+                    <td>Masculino</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td style="color:lime;">Disponível</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">MEP-1003</td>
+                    <td>Tênis Luxury Edition</td>
+                    <td>Calçados</td>
+                    <td>35</td>
+                    <td>10</td>
+                    <td style="color:lime;">Disponível</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">MEP-1020</td>
+                    <td>Relógio Prestige Swiss</td>
+                    <td>Relógios</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td style="color:orange;">Reposição Necessária</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">MEP-1032</td>
+                    <td>Bolsa Signature Gold</td>
+                    <td>Bolsas</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td style="color:lime;">Disponível</td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;">MEP-1040</td>
+                    <td>Perfume Royal Essence</td>
+                    <td>Perfumaria</td>
+                    <td>28</td>
+                    <td>10</td>
+                    <td style="color:lime;">Disponível</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= MOVIMENTAÇÃO ================= -->
+
+<section class="advantages">
+
+    <h2>Movimentação do Estoque</h2>
+
+    <div class="advantages-grid">
+
+        <div class="advantage">
+
+            <i class="fas fa-arrow-down"></i>
+
+            <h3>Entradas</h3>
+
+            <p>
+
+                <strong>215</strong> produtos recebidos neste mês.
+
+            </p>
+
+        </div>
+
+        <div class="advantage">
+
+            <i class="fas fa-arrow-up"></i>
+
+            <h3>Saídas</h3>
+
+            <p>
+
+                <strong>187</strong> produtos vendidos e enviados aos clientes.
+
+            </p>
+
+        </div>
+
+        <div class="advantage">
+
+            <i class="fas fa-exclamation-triangle"></i>
+
+            <h3>Alerta</h3>
+
+            <p>
+
+                18 produtos precisam de reposição imediata.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FORMULÁRIO ================= -->
+
+<section class="experience">
+
+    <div class="experience-text">
+
+        <h2>Registrar Movimentação</h2>
+
+        <p>
+
+            Atualize entradas e saídas para manter o estoque sincronizado.
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <form>
+
+            <input type="text" placeholder="Código SKU"
+                style="width:100%;padding:15px;margin-bottom:15px;border:none;border-radius:8px;">
+
+            <input type="text" placeholder="Nome do Produto"
+                style="width:100%;padding:15px;margin-bottom:15px;border:none;border-radius:8px;">
+
+            <input type="number" placeholder="Quantidade"
+                style="width:100%;padding:15px;margin-bottom:15px;border:none;border-radius:8px;">
+
+            <select
+                style="width:100%;padding:15px;margin-bottom:20px;border:none;border-radius:8px;">
+
+                <option>Entrada</option>
+                <option>Saída</option>
+
+            </select>
+
+            <button class="btn-gold">
+
+                Registrar Movimentação
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Gestão Inteligente de Estoque</h2>
+
+    <p>
+
+        Controle preciso dos produtos garante eficiência operacional,
+        redução de perdas e disponibilidade para seus clientes.
+
+    </p>
+
+    <a href="financeiro.html" class="btn-gold">
+
+        Ir para Financeiro
+
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <h2>Maison <span>Élégance</span></h2>
+
+        <p>Luxury Fashion Management System</p>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Maison Élégance — Todos os Direitos Reservados.
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
+```

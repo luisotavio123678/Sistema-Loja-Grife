@@ -1,0 +1,488 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clientes VIP | Maison Élégance</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>Maison <span>Élégance</span></h1>
+
+<p>Luxury Fashion Management</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Início</a></li>
+
+<li><a href="catalogo.html">Coleções</a></li>
+
+<li><a href="produtos.html">Produtos</a></li>
+
+<li><a href="clientes.html">Clientes</a></li>
+
+<li><a href="pedidos.html">Pedidos</a></li>
+
+<li><a href="estoque.html">Estoque</a></li>
+
+<li><a href="financeiro.html">Financeiro</a></li>
+
+<li><a href="relatorios.html">Relatórios</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>Clientes Exclusivos</h2>
+
+<p>
+
+Nossa comunidade é formada por clientes que valorizam luxo, exclusividade e atendimento personalizado.
+
+O programa VIP oferece benefícios únicos, atendimento dedicado e acesso antecipado às novas coleções.
+
+</p>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+alt="Cliente VIP">
+
+</div>
+
+</section>
+
+<section class="statistics">
+
+<div class="stat">
+
+<h2>3.850</h2>
+
+<p>Clientes Ativos</p>
+
+</div>
+
+<div class="stat">
+
+<h2>1.420</h2>
+
+<p>Clientes Gold</p>
+
+</div>
+
+<div class="stat">
+
+<h2>760</h2>
+
+<p>Clientes Platinum</p>
+
+</div>
+
+<div class="stat">
+
+<h2>285</h2>
+
+<p>Clientes Black</p>
+
+</div>
+
+</section>
+
+<section class="highlights">
+
+<h2>Clientes Destaque</h2>
+
+<p>
+
+Conheça alguns dos clientes que fazem parte do programa Maison Élégance Exclusive.
+
+</p>
+
+<div class="cards">
+
+<!-- Cliente 1 -->
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg"
+alt="Cliente">
+
+<h3>Isabella Moretti</h3>
+
+<p>
+
+Categoria:
+<strong style="color:#D4AF37;">Black Exclusive</strong>
+
+</p>
+
+<p>Total em Compras</p>
+
+<h2 style="color:#D4AF37;">R$ 248.900</h2>
+
+<p>
+
+✔ Atendimento Personalizado
+
+<br>
+
+✔ Convites Exclusivos
+
+<br>
+
+✔ Coleções Antecipadas
+
+</p>
+
+</div>
+
+<!-- Cliente 2 -->
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg"
+alt="Cliente">
+
+<h3>Henrique Valente</h3>
+
+<p>
+
+Categoria:
+<strong style="color:#D4AF37;">Platinum</strong>
+
+</p>
+
+<p>Total em Compras</p>
+
+<h2 style="color:#D4AF37;">R$ 182.400</h2>
+
+<p>
+
+✔ Frete Premium
+
+<br>
+
+✔ Consultoria de Moda
+
+<br>
+
+✔ Atendimento VIP
+
+</p>
+
+</div>
+
+<!-- Cliente 3 -->
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/women/45.jpg"
+alt="Cliente">
+
+<h3>Sofia Albuquerque</h3>
+
+<p>
+
+Categoria:
+<strong style="color:#D4AF37;">Gold</strong>
+
+</p>
+
+<p>Total em Compras</p>
+
+<h2 style="color:#D4AF37;">R$ 95.600</h2>
+
+<p>
+
+✔ Programa Fidelidade
+
+<br>
+
+✔ Cashback Premium
+
+<br>
+
+✔ Eventos Exclusivos
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+```
+```html
+<!-- ================= TABELA DE CLIENTES ================= -->
+
+<section class="highlights">
+
+    <h2>Cadastro de Clientes</h2>
+
+    <p>
+        Relação dos principais clientes cadastrados na Maison Élégance.
+    </p>
+
+    <div style="overflow-x:auto;">
+
+        <table style="width:100%; border-collapse:collapse; margin-top:30px; background:#161616; border-radius:12px; overflow:hidden;">
+
+            <thead style="background:#D4AF37; color:#111;">
+
+                <tr>
+
+                    <th style="padding:18px;">Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Cidade</th>
+                    <th>Nível VIP</th>
+                    <th>Total Comprado</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td style="padding:16px;">Isabella Moretti</td>
+                    <td>isabella@email.com</td>
+                    <td>(11) 99888-1000</td>
+                    <td>São Paulo</td>
+                    <td style="color:#D4AF37;">Black</td>
+                    <td>R$ 248.900</td>
+
+                </tr>
+
+                <tr>
+
+                    <td style="padding:16px;">Henrique Valente</td>
+                    <td>henrique@email.com</td>
+                    <td>(21) 99777-2000</td>
+                    <td>Rio de Janeiro</td>
+                    <td style="color:#D4AF37;">Platinum</td>
+                    <td>R$ 182.400</td>
+
+                </tr>
+
+                <tr>
+
+                    <td style="padding:16px;">Sofia Albuquerque</td>
+                    <td>sofia@email.com</td>
+                    <td>(31) 99666-3000</td>
+                    <td>Belo Horizonte</td>
+                    <td style="color:#D4AF37;">Gold</td>
+                    <td>R$ 95.600</td>
+
+                </tr>
+
+                <tr>
+
+                    <td style="padding:16px;">Eduardo Martins</td>
+                    <td>eduardo@email.com</td>
+                    <td>(41) 99555-4000</td>
+                    <td>Curitiba</td>
+                    <td style="color:#D4AF37;">Gold</td>
+                    <td>R$ 74.500</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= FORMULÁRIO ================= -->
+
+<section class="experience">
+
+    <div class="experience-text">
+
+        <h2>Novo Cliente VIP</h2>
+
+        <p>
+
+            Cadastre clientes exclusivos para oferecer atendimento personalizado,
+            histórico de compras e benefícios premium.
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <form>
+
+            <input type="text" placeholder="Nome Completo"
+                style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:none;">
+
+            <input type="email" placeholder="E-mail"
+                style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:none;">
+
+            <input type="tel" placeholder="Telefone"
+                style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:none;">
+
+            <input type="text" placeholder="Cidade"
+                style="width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:none;">
+
+            <select
+                style="width:100%;padding:15px;margin-bottom:20px;border-radius:8px;border:none;">
+
+                <option>Gold</option>
+                <option>Platinum</option>
+                <option>Black</option>
+
+            </select>
+
+            <button class="btn-gold" type="submit">
+
+                Cadastrar Cliente
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= BENEFÍCIOS ================= -->
+
+<section class="advantages">
+
+    <h2>Programa Maison VIP</h2>
+
+    <div class="advantages-grid">
+
+        <div class="advantage">
+
+            <i class="fas fa-crown"></i>
+
+            <h3>Black Exclusive</h3>
+
+            <p>
+
+                Atendimento com consultor exclusivo, eventos privados e acesso
+                antecipado às novas coleções.
+
+            </p>
+
+        </div>
+
+        <div class="advantage">
+
+            <i class="fas fa-gem"></i>
+
+            <h3>Platinum</h3>
+
+            <p>
+
+                Frete premium, descontos especiais e experiências personalizadas.
+
+            </p>
+
+        </div>
+
+        <div class="advantage">
+
+            <i class="fas fa-award"></i>
+
+            <h3>Gold</h3>
+
+            <p>
+
+                Programa de fidelidade, cashback e condições especiais de compra.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Transforme Clientes em Embaixadores da Marca</h2>
+
+    <p>
+
+        Um atendimento impecável é o diferencial das maiores grifes do mundo.
+        Na Maison Élégance cada cliente recebe uma experiência exclusiva.
+
+    </p>
+
+    <a href="pedidos.html" class="btn-gold">
+
+        Visualizar Pedidos
+
+    </a>
+
+</section>
+
+<!-- ================= RODAPÉ ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <h2>Maison <span>Élégance</span></h2>
+
+        <p>Luxury Fashion Management System</p>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Maison Élégance — Todos os Direitos Reservados.
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
+```
